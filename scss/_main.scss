@@ -2,7 +2,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     margin: 0;
-    padding: 0;
+    padding: 19px;
 }
 
 ul {
@@ -10,16 +10,33 @@ ul {
     padding: 0;
     list-style: none;
 }
+.image {
+    position: relative;
+    padding-right: 24px;
+}
 
 .image span{
     display: block;
 }
 
+.page_header {
+    margin-bottom: 70px;
+}
+
 .images_list {
    display: grid;
-   grid-template-columns: repeat(1fr, 2);
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 24px;
 }
 
 .image img {
-    width: 100%;
+    max-width: 100%;
+}
+
+.job_title {
+    position: absolute;
+    right: 10%;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
 }
