@@ -1,0 +1,25 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.image span{
+    display: block;
+}
+
+.images_list {
+   display: grid;
+   grid-template-columns: repeat(1fr, 2);
+}
+
+.image img {
+    width: 100%;
+}
