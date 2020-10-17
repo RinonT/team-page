@@ -1,17 +1,75 @@
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Poppins"), local("Poppings"), url("../fonts/Poppings-SemiBold.woff2") format("woff2"), url("../fonts/ Poppings-SemiBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Poppins"), local("Poppins"), url("../fonts/Poppings-Regular.woff2") format("woff2"), url("../fonts/ Poppings-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-style: normal;
+  src: local("PTSerif-Regular"), local("PTSerif-Regular"), url("../fonts/PTSerif-Regular.woff2") format("woff2"), url("../fonts/ PTSerif-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+  src: local("PTSerif-Bold"), local("PTSerif-Bold"), url("../fonts/PTSerif-Bold.woff2") format("woff2"), url("../fonts/ PTSerif-Bold.woff") format("woff"); }
+
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Poppins";
   font-size: 16px;
+  padding: 19px;
   margin: 0;
-  padding: 19px; }
+  background-color: #fafafa; }
+
+.page_title,
+.job_title {
+  font-family: "PT Serif"; }
+
+.page_title,
+.article_header {
+  margin: 0; }
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
+.page_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  margin-bottom: 38px; }
+
+.article_header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  text-transform: uppercase; }
+
+.image_container {
+  margin: 0; }
+
+.image:nth-child(even) {
+  margin-top: 48px; }
+
+.image:nth-child(odd) {
+  margin: 0; }
+
 .image {
   position: relative;
-  padding-right: 24px; }
+  margin-bottom: 12px; }
 
 .image span {
   display: block; }
@@ -25,11 +83,59 @@ ul {
   column-gap: 24px; }
 
 .image img {
-  max-width: 100%; }
+  width: 90%;
+  height: 90%;
+  object-fit: cover; }
 
 .job_title {
+  font-size: 12px;
   position: absolute;
-  right: 10%;
+  right: 0%;
   text-transform: uppercase;
   writing-mode: vertical-rl;
   text-orientation: mixed; }
+
+.team_name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #000000; }
+
+@media (min-width: 462px) {
+  .image {
+    width: 177px; } }
+
+@media (min-width: 500px) {
+  .image {
+    width: 100%; }
+  .job_title {
+    right: 5%; } }
+
+@media (min-width: 760px) {
+  body {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto; }
+  .page_title {
+    margin-bottom: 0; }
+  .page_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .page_article {
+    max-width: 439px; }
+  .images_list {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px; }
+  .image:nth-child(even) {
+    margin-top: 0; }
+  .image:nth-of-type(2),
+  .image:nth-of-type(5) {
+    margin-top: 70px; }
+  .team_name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px; } }
