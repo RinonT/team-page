@@ -42,6 +42,15 @@ ul {
   padding: 0;
   list-style: none; }
 
+@media (min-width: 760px) {
+  body {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 110px; }
+  .page_title {
+    margin-bottom: 0; } }
+
 .page_title {
   font-style: normal;
   font-weight: bold;
@@ -107,19 +116,11 @@ ul {
   .image {
     width: 177px; } }
 
-@media (min-width: 500px) {
+@media (min-width: 550px) {
   .image {
-    width: 100%; }
-  .job_title {
-    right: 5%; } }
+    width: 100%; } }
 
 @media (min-width: 760px) {
-  body {
-    max-width: 1114px;
-    margin-left: auto;
-    margin-right: auto; }
-  .page_title {
-    margin-bottom: 0; }
   .page_header {
     display: flex;
     flex-direction: row;
